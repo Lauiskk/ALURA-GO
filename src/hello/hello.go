@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 func main(){
@@ -19,4 +20,5 @@ func main(){
 	var choice int
 	fmt.Scan( &choice )
 	fmt.Println("O comando escolhido foi", choice)
+	fmt.Println("O tipo da variavel da escolha é", reflect.TypeOf(choice) )
 }
