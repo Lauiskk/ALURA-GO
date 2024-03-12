@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 )
 
 func main(){
@@ -20,5 +19,25 @@ func main(){
 	var choice int
 	fmt.Scan( &choice )
 	fmt.Println("O comando escolhido foi", choice)
-	fmt.Println("O tipo da variavel da escolha é", reflect.TypeOf(choice) )
+
+	//if choice == 1 {
+	//	fmt.Println("Monitoring")
+	//}else if choice == 2{
+	//	fmt.Println("Showing Logs")
+	//}else if choice == 0{
+	//	fmt.Println("Ending programm")
+	//}else{
+	//	fmt.Println("Null comand")
+	//}
+
+	switch choice{
+	case 1:
+		fmt.Println("Monitoring")
+	case 2:
+		fmt.Println("Showing Logs")
+	case 0:
+		fmt.Println("Ending programm")
+	default:
+		fmt.Println("Null comand")
+	}
 }
