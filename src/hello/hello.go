@@ -20,15 +20,15 @@ func main(){
 	fmt.Scan( &choice )
 	fmt.Println("O comando escolhido foi", choice)
 
-	//if choice == 1 {
-	//	fmt.Println("Monitoring")
-	//}else if choice == 2{
-	//	fmt.Println("Showing Logs")
-	//}else if choice == 0{
-	//	fmt.Println("Ending programm")
-	//}else{
-	//	fmt.Println("Null comand")
-	//}
+	if choice == 1 {
+		fmt.Println("Monitoring")
+	}else if choice == 2{
+		fmt.Println("Showing Logs")
+	}else if choice == 0{
+		fmt.Println("Ending programm")
+	}else{
+		fmt.Println("Null comand")
+	}
 
 	switch choice{
 	case 1:
